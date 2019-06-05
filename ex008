@@ -1,0 +1,13 @@
+# Exercício Python 008: Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+
+n = float(input('Digite uma distância: '))
+
+print('{}m é igual a'.format(n))
+
+print('{:.3f}km'.format(n / 1000))
+print('{:.3f}hm'.format(n / 100))
+print('{:.3f}dam'.format(n / 10))
+print('{:.3f}m'.format(n)
+print('{:.3f}dm'.format(n * 10)
+print('{:.3f}cm'.format(n * 100))
+print('{:.3f}mm'.format(n * 1000))
