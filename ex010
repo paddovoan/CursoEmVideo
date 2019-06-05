@@ -1,0 +1,10 @@
+# Exercício Python 010: Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar.
+
+print('Conversor de R$ para USD$ e Euro')
+
+real = float(input('Quanto você deseja converter? R$'))
+
+dolar = float(real / 3.87)
+euro = float(real/4.35)
+
+print('Com R${:.2f}, você pode comprar US${:.2f} | £{:.2f}'.format(real, dolar, euro))
