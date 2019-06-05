@@ -1,0 +1,10 @@
+# Exercício Python 003: Crie um programa que leia dois números e mostre a soma entre eles.
+s = 0
+print('Digite os números que queres somar')
+
+n1 = int(input('Valor 1: '))
+n2 = int(input('Valor 2: '))
+
+s = n1 + n2
+
+print('A soma entre {} e {} é igual a {}'.format(n1, n2, s))
