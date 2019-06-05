@@ -7,4 +7,4 @@ n2 = float(input('Segunda nota: ')
 
 media = (n1 + n2) / 2
 
-print('A sua média foi {}'.format(media))
+print('A sua média foi {:.1f}'.format(media))
