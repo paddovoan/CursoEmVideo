@@ -1,0 +1,4 @@
+# EX001: Leia nome de uma pessoa e lhe comprimente.
+
+nome = str(input('Qual seu nome? '))
+print('Prazer em te conhecer', nome + '!')
