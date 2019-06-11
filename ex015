@@ -1,0 +1,6 @@
+#exercicio 015
+#escreva um programa que pergunte a quantidade de dias e Km com um carro e de um valor a ser pago. Sendo dia R$60 e Km R$0,15
+print('--Bem-Vindo--')
+km = float(input('Quantos quilômetros andaste? '))
+dia = int(input('Quantos dias ficaste com mesmo? '))
+print('Você andou por {} dia(s) e andou {:.0f}Km, o total a se pagar: R${}'.format(dia, km, (km * 0.15) + (dia * 60)))
