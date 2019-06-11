@@ -1,0 +1,11 @@
+#exercicio 029
+#Se passar de 80km/h paga R$7 por km extra
+vel = int(input('Qual a velocidade do carro: '))
+print('Calculando...')
+if vel > 80:
+    n = (vel - 80) * 7
+    print('O carro ultrapassou o limite de 80Km/h\n'
+          'e pagará multa de R${}'.format(n))
+else:
+    print('O carro está dentro do limite de velocidade.')
+print('Tenha um bom dia e dirija com segurança!')
