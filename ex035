@@ -1,0 +1,11 @@
+#exercicio 035
+#Calcular se é possível que um triângulo seja montado
+print('Diga o tomanho de 3 retas. m')
+a = float(input('Reta A: '))
+b = float(input('Reta B: '))
+c = float(input('Reta C: '))
+#print(r1, r2, r3)
+if a < b + c and b < a + c and c < a + b:
+    print('Este triângulo existe!')
+else:
+    print('Este triângulo não existe!')
