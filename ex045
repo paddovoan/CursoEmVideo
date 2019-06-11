@@ -1,0 +1,72 @@
+"""
+Exercício Python 045: Crie um programa que faça o computador jogar Jokenpô com você.
+"""
+from random import randint
+from time import sleep
+import pygame
+import emoji
+pygame.mixer.init()
+pygame.mixer.music.load('ex021.mp3')
+pygame.mixer.music.play()
+pc = randint(0, 2)
+jogadas = ['Pedra', 'Papel', 'Tesoura']
+#print(jogadas[pc]) apenas pra testar ^v^
+
+print('{:=^15}'.format(' JOKENPO '))
+print(emoji.emojize("""Opções:
+[ 0 ] 💎 Pedra 
+[ 1 ] 📄 Papel 
+[ 2 ] :scissors: Tesoura"""))
+jogador = int(input('Sua opção: '))
+print('JO')
+sleep(0.64)
+print('KEN')
+sleep(0.64)
+print('PO!!!')
+sleep(0.43)
+
+#Condições de vitória/perda/empate
+
+if jogador == 1 and pc == 0:
+    print('-='*10)
+    print("""Computador jogou {}
+Jogador jogou {}""".format(jogadas[pc], jogadas[jogador]))
+    print('-='*10)
+    print('Jogador ganha!')
+elif jogador == 0 and pc == 1:
+    print('-='*10)
+    print("""Computador jogou {}
+Jogador jogou {}""".format(jogadas[pc], jogadas[jogador]))
+    print('-='*10)
+    print('Maquina ganha!')
+elif jogador == 2 and pc == 1:
+    print('-='*10)
+    print("""Computador jogou {}
+Jogador jogou {}""".format(jogadas[pc], jogadas[jogador]))
+    print('-='*10)
+    print('Jogador ganha!')
+elif jogador == 1 and pc == 2:
+    print('-='*10)
+    print("""Computador jogou {}
+Jogador jogou {}""".format(jogadas[pc], jogadas[jogador]))
+    print('-='*10)
+    print('Maquina ganha!')
+elif jogador == 0 and pc == 2:
+    print('-='*10)
+    print("""Computador jogou {}
+Jogador jogou {}""".format(jogadas[pc], jogadas[jogador]))
+    print('-='*10)
+    print('Jogador ganha!')
+elif jogador == 2 and pc == 0:
+    print('-='*10)
+    print("""Computador jogou {}
+Jogador jogou {}""".format(jogadas[pc], jogadas[jogador]))
+    print('-='*10)
+    print('Maquina ganha!')
+elif jogador == pc:
+    print('-='*10)
+    print("""Computador jogou {}
+Jogador jogou {}""".format(jogadas[pc], jogadas[jogador]))
+    print('-='*10)
+    print('EMPATE')
+input('')
