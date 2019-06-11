@@ -1,0 +1,5 @@
+#exercicio 014
+#Crie um programa que transforme ºC em ºf
+c = float(input('Informe a temperatura em ºC: '))
+f = 9 * c / 5 + 32
+print('A temperatura em {}ºC corresponde a {}ºf'.format(c, f))
