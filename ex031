@@ -1,0 +1,15 @@
+#exercicio 031
+#Desenvolva um programa que perguta a distância em Km. Calcule o preço da viagem, cobrando R$0,50 por Km para viagens me
+#nores do que 200Km e R$0,45 para acima do mesmo.
+from time import sleep
+print('Compra de passagens online\nSendo R$0,50/km abaixo de\n200Km e R$0,45/Km acima.')
+dist = int(input('Qual a distância: '))
+sleep(1)
+print('Calculando...\n')
+sleep(1.6)
+if dist <= 200:
+    preço = dist * 0.50
+    print('Você pagará R${:.2f} por {}Km'.format(preço, dist))
+else:
+    preço = dist * 0.45
+    print('Você pagará R${:.2f} por {}Km.'.format(preço, dist))
