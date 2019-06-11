@@ -1,0 +1,4 @@
+#exercicio 025
+#Descobrir se tem SILVA em um nome
+nome = str(input('Qual seu nome completo? ')).lower().strip()
+print('No seu nome tem Silva? {}'.format('silva' in nome))
