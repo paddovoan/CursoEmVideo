@@ -1,0 +1,25 @@
+#exercicio 033
+#3 numeros e descubra qual é o maior
+a = int(input('Digite um valor: '))
+b = int(input('Digite outro: '))
+c = int(input('E outro: '))
+if a > b and a > c:
+    if b < c:
+        menor = b
+    if c < b:
+        menor = c
+    print('O número {} é o maior! entre {} e {} o menor de todos é {}'.format(a, b, c, menor))
+if b > a and b > c:
+    if a < c:
+        menor = a
+    if c < a:
+        menor = c
+    print('O número {} é o maior! entre {} e {} o menor de todos é {}'.format(b, a, c, menor))
+if c > a and c > b:
+    if a < b:
+        menor = a
+    if b < a:
+        menor = b
+    print('O número {} é o maior! entre {} e {} o menor de todos é {}'.format(c, a, b, menor))
+if a == b or a == c or b == c:
+    print('Não digite valores iguais!')
