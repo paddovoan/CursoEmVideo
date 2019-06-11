@@ -1,0 +1,9 @@
+#exercicio 034
+#Calcular o novo salário de um funcionário baseado em seu seu sala´rio antigo
+salário = float(input('Digite seu salário antigo: '))
+if salário >= 1250:
+    novo = salário + (salário * 10 / 100)
+    print('Seu novo salário será de R${:.2f} com 10% de aumento.'.format(novo))
+else:
+    novo = salário + (salário * 15 / 100)
+    print('Seu novo salário será de R${:.2f} com 15% de aumento.'.format(novo))
