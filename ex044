@@ -1,0 +1,35 @@
+"""
+Exercício Python 044: Elabore um programa que calcule o valor a ser pago por um produto, considerando o seu preço normal
+e condição de pagamento:
+- à vista dinheiro/cheque: 10% de desconto
+- à vista no cartão: 5% de desconto
+- em até 2x no cartão: preço formal
+- 3x ou mais no cartão: 20% de juros
+"""
+from time import sleep
+valor = float(input('Digite o valor do produtor: R$'))
+print('='*30)
+print("""Deseja pagar como:
+[1] NO DINHEIRO 10% DE DESCONTO
+[2] NO CARTÃO 5% DE DESCONTO
+[3] PARCELAR 2X OU MAIS""")
+print('='*30)
+sleep(0.5)
+print('Digite 1, 2, 3 para selecionar seu pagamento.')
+escolha = int(input('Qual sua forma de pagamento: '))
+if escolha == 1:
+    valor_vista = valor - (valor * 10 / 100)
+    print('Você pagará com 10% off: R${:.2f}'.format(valor_vista))
+elif escolha == 2:
+    valor_cartão = valor - (valor * 5 / 100)
+    print('Você pagará com 5% off: R${:.2f}'.format(valor_cartão))
+elif escolha == 3:
+    print('Deseja parcelar por quantas vezes.\nLembre-se acima de duas parcelas é acrescentado 20% de juros.')
+    parcelas = int(input('Quantas parcelas pretende pagar: '))
+    if parcelas == 2:
+        valor_parcelado = valor / parcelas
+        print('O total parcelado em {} parcelas dá R${:.2f}'.format(parcelas, valor_parcelado))
+    else:
+        valor_parcelado = valor / parcelas + ((valor * 20 / 100) / parcelas)
+        print('O total parcelado em {} parcelas dá R${:.2f}'.format(parcelas, valor_parcelado))
+
