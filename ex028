@@ -1,0 +1,13 @@
+#exercicio 028
+#Jogo da advinhação
+from random import randint
+from time import sleep
+computador = randint(0, 5)
+print('== Tente adivinhar o numero de 0 a 5 ==')
+resp = int(input('Qual é seu chute? > '))
+print('Pensando em um número...')
+sleep(.3)
+if resp == computador:
+    print('Você acertou o número era {}'.format(computador))
+else:
+    print('Você perdeu o número era {} não {}'.format(computador, resp))
