@@ -1,0 +1,8 @@
+#exercicio 012
+#Faça um algoritmo que leia o preço de um produto e mostre seu novo preco, com 5% de desconto
+print('Digite um preço e descubra seu desconto com 5%')
+print('=='*4)
+preco = float(input('Valor: '))
+precoNovo = preco - (preco * 5 / 100)
+print('O produto que custava R${:.2f} com desconto de 5% custará R${:.2f}'.format(preco, precoNovo))
+
