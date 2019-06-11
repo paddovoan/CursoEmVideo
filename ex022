@@ -1,0 +1,10 @@
+#exercicio 022
+#Crie um programa que leia um nome e faça o em maisculo, minusculo, retire todos espaços para contar. quantas letras tem
+#primeiro nome.
+nome = str(input('Digite seu nome completo:  ')).title().strip()
+print('Seu nome em maíusculas é {}'.format(nome.upper()))
+print('Seu nome em minísculas é {}'.format(nome.lower()))
+print('Seu nome ao todo tem {} letras'.format(len(nome.replace(' ', '')))) # ou len(nome) - nome.count(' ')
+nome = nome.split()
+print('Seu primeiro nom é {} e tem {} letras'.format(nome[0], len(nome[0]))) # ou print(nome.find(' '), funciona descobr
+#indo onde o primeiro espaço aparece logicamente descobrindo quantos letras tem seu nome
