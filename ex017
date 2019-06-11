@@ -1,0 +1,9 @@
+from math import sqrt
+# exercicio 017
+#Crie um programa que calcule a hipotenusa de um triângulo
+print('Calculador de de hipotenusa')
+co = float(input('Qual comprimento do cateto oposto: '))
+ca = float(input('Qual comprimento do cateto adjascente: '))
+hi = sqrt(co**2 + ca**2)
+print('A hipotenusa vai medir {:.2f}'.format(hi))
+
