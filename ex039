@@ -1,0 +1,14 @@
+"""
+Exercício Python 039: Faça um programa que leia o ano de nascimento de um jovem e informe, de acordo com a sua idade, se
+ele ainda vai se alistar ao serviço militar, se é a hora exata de se alistar ou se já passou do tempo do alistamento.
+Seu programa também deverá mostrar o tempo que falta ou que passou do prazo
+"""
+import time
+nasceu = int(input('Qual ano tu nasceste? '))
+idade = (int(time.strftime('%Y'))) - nasceu
+if idade == 18:
+    print('Você necessita se alistar!')
+elif idade > 18:
+    print('Você passou {} anos do prazo!'.format((idade - 18)))
+elif idade < 18:
+    print('Faltam {} anos para você se alistar'.format(((idade - 18) * (-1))))
