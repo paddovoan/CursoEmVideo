@@ -1,0 +1,6 @@
+#exercicio 013
+#Faça um algoritmo que leia o salário de um funcionário e mostre seu novo salario com 15% de aumento
+print('Digite seu salário abaixo e descubra\nseu novo sálario com 15% de acréscimo.')
+salário = float( input('Seu Sálario: '))
+novo = float(salário + ((salário / 100) * 15))
+print('Salário antigo: R${:.2f}\nSalário novo com 15%: R${:.2f}'.format(salário, novo))
