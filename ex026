@@ -1,0 +1,10 @@
+#exercicio 26
+#Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra "A", em que posição ela aparece
+# a primeira vez e em que posição ela aparece a última vez.
+frase = str(input('Digite uma frase com algumas palavras: ')).lower().strip()
+qa = frase.count('a')
+qb = frase.find('a')
+qc = frase.rfind('a')
+print('Tem {}'.format(qa))
+print('Na primeira pos: {}'.format((qb + 1))) # +1 é pra ficar de acordo com 1, 2, 3, 4.. e não 0, 1, 2,3..
+print('Na ultima pos: {}'.format(qc + 1))
