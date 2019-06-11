@@ -1,0 +1,6 @@
+#exercicio 024
+#Descubra se começa com SANTO o nome de uma cidade
+cidade = str(input('Em que cidade você nasceu? ')).lower().strip()
+"""cidade = cidade.split() 
+print(cidade[0] == 'santo')""" # Segunda forma de se fazer tambem
+print('A cidade {} começa com a palavra SANTO?'.format(cidade.title()), 'santo' in cidade)
