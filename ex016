@@ -1,0 +1,5 @@
+from math import trunc
+#exercicio 016
+#Crie um programa que mostre a porção inteira de um numero
+n = float(input('Digite um valor: '))
+print('A porção inteira de {:.2f} é {}'.format(n, trunc(n)))
